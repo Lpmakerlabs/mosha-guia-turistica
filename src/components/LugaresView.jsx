@@ -120,7 +120,7 @@ export default function LugaresView({ lang, setLang, onBack, onOpenPrivacy }) {
         {/* Top Alpine Navigation Bar (Dedicated bar so artwork is never obstructed) */}
         <div className="w-full bg-[#0c1a2d] border-b border-white/10">
           <nav aria-label="Navegación principal" className="w-full max-w-[1800px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-3 sm:py-4 flex items-center justify-between">
-            {/* Mosha Brand Logo */}
+            {/* Andes Brand Logo */}
             <button
               onClick={onBack}
               className="flex flex-col items-start group cursor-pointer text-left"
@@ -130,7 +130,7 @@ export default function LugaresView({ lang, setLang, onBack, onOpenPrivacy }) {
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white stroke-[1.75] transition-transform group-hover:scale-105" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path d="M3 10.5L12 3l9 7.5M5.25 8.75V20.25a.75.75 0 00.75.75h12a.75.75 0 00.75-.75V8.75" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span className="text-lg sm:text-2xl font-extrabold tracking-[0.25em] text-white">MOSHA</span>
+                <span className="text-lg sm:text-2xl font-extrabold tracking-[0.25em] text-white">ANDES</span>
               </div>
               <span className="text-[8px] sm:text-[9px] font-semibold tracking-[0.38em] text-slate-200 uppercase pl-0.5">
                 DEPARTAMENTOS

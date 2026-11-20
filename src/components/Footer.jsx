@@ -21,7 +21,7 @@ export default function Footer({ tFooter, onOpenPrivacy }) {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className="text-base font-extrabold tracking-[0.25em] text-white leading-none">MOSHA</span>
+              <span className="text-base font-extrabold tracking-[0.25em] text-white leading-none">ANDES</span>
               <span className="text-[7px] font-semibold tracking-[0.35em] text-slate-300 uppercase pl-0.5">
                 DEPARTAMENTOS
               </span>
