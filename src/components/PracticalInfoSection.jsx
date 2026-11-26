@@ -5,7 +5,7 @@ export default function PracticalInfoSection({
   tServicios,
   wifiSSID = "Andes_Departamentos_Fibra",
   wifiPassword = "Trevelin2026!",
-  hostPhone = "02945 64-5700",
+  hostPhone = "+54 9 2945 XX-XXXX",
   onShowToast,
 }) {
   const [copiedPass, setCopiedPass] = useState(false);
@@ -81,7 +81,7 @@ export default function PracticalInfoSection({
   const waText = encodeURIComponent(
     tServicios.waMessage || 'Hola, me estoy hospedando en Andes Departamentos'
   );
-  const waLink = `https://wa.me/${waNumber}?text=${waText}`;
+  const waLink = cleanPhone.length > 5 && !cleanPhone.includes('X') ? `https://wa.me/${waNumber}?text=${waText}` : `https://wa.me/?text=${waText}`;
 
   return (
     <section className="pb-16 lg:pb-24 bg-[#f8fafc]" id="servicios">
@@ -341,7 +341,7 @@ export default function PracticalInfoSection({
                 {/* Phone Clickable Row (Guaranteed Single-Line No-Wrap) */}
                 <a
                   className="group bg-slate-50/90 hover:bg-slate-100/80 rounded-xl p-3 sm:p-3.5 border border-slate-200/70 flex items-center justify-between gap-2.5 transition-colors"
-                  href={`tel:${telNumber}`}
+                  href={telNumber.includes('X') || !telNumber ? '#' : `tel:${telNumber}`}
                   title="Llamar por teléfono"
                 >
                   <div className="flex items-center space-x-3 min-w-0 flex-1">
@@ -360,7 +360,7 @@ export default function PracticalInfoSection({
                         {tServicios.contactoTelLabel || 'Llamadas directas'}
                       </span>
                       <span className="text-xs sm:text-sm font-bold text-slate-900 whitespace-nowrap group-hover:text-blue-700 transition block">
-                        +54 9 2945 64-5700
+                        +54 9 2945 XX-XXXX
                       </span>
                     </div>
                   </div>
@@ -386,7 +386,7 @@ export default function PracticalInfoSection({
                     </svg>
                     <div className="flex flex-col text-left">
                       <span className="text-xs sm:text-sm font-semibold">{tServicios.contactoBtn || 'Enviar mensaje por WhatsApp'}</span>
-                      <span className="text-[11px] text-slate-300 font-mono tracking-wide">+54 9 2945 64-5700</span>
+                      <span className="text-[11px] text-slate-300 font-mono tracking-wide">+54 9 2945 XX-XXXX</span>
                     </div>
                   </div>
                   <svg className="w-4 h-4 ml-1 stroke-[2.5] text-slate-300 group-hover:text-white group-hover:translate-x-0.5 transition shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

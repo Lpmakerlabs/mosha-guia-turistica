@@ -4,7 +4,7 @@ export default function Footer({ tFooter, onOpenPrivacy }) {
   const waText = encodeURIComponent(
     tFooter?.waMessage || 'Hola, me estoy hospedando en Andes Departamentos'
   );
-  const waLink = `https://wa.me/5492945645700?text=${waText}`;
+  const waLink = `https://wa.me/?text=${waText}`;
 
   return (
     <footer className="bg-[#0c1a2d] text-white border-t border-slate-800" id="contacto">

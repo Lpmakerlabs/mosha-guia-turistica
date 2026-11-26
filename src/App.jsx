@@ -72,7 +72,7 @@ export default function App() {
   // Real Complex Credentials & Contact
   const wifiSSID = "Andes_Departamentos_Fibra";
   const wifiPassword = "Trevelin2026!";
-  const hostPhone = "02945 64-5700";
+  const hostPhone = "+54 9 2945 XX-XXXX";
 
   // Idle background prefetch for instant subpage transitions
   useEffect(() => {
@@ -216,7 +216,7 @@ export default function App() {
             ? 'Hello! I am staying at Andes Departamentos and have a question.'
             : 'Hola Andes! Estoy en el departamento y quería hacerles una consulta.')
       );
-      window.open(`https://wa.me/5492945645700?text=${msg}`, '_blank');
+      window.open(`https://wa.me/?text=${msg}`, '_blank');
       return;
     }
 
