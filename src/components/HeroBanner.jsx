@@ -10,13 +10,13 @@ export default function HeroBanner({ tHero }) {
       <img
         alt="Complejo moderno Andes Departamentos Trevelin al atardecer"
         className="absolute inset-0 w-full h-full object-cover object-[62%_center] sm:object-center z-0"
-        src="./hero-mosha-banner-2x.webp?v=8"
-        srcSet="./hero-mosha-banner.webp?v=8 1024w, ./hero-mosha-banner-2x.webp?v=8 2048w"
+        src="./hero-andes-banner-2x.webp?v=8"
+        srcSet="./hero-andes-banner.webp?v=8 1024w, ./hero-andes-banner-2x.webp?v=8 2048w"
         sizes="100vw"
         fetchpriority="high"
         decoding="async"
         onError={(e) => {
-          e.currentTarget.src = "./hero-mosha-banner-2x.png";
+          e.currentTarget.src = "./hero-andes-banner-2x.png";
         }}
       />
 
