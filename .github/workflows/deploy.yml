@@ -1,4 +1,4 @@
-name: Deploy Mosha Departamentos to GitHub Pages
+name: Deploy Andes Departamentos to GitHub Pages
 
 on:
   push:

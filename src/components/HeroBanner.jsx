@@ -8,7 +8,7 @@ export default function HeroBanner({ tHero }) {
     >
       {/* Full-Bleed High-Resolution Hero Background Image (100% crisp, no artificial scale zoom) */}
       <img
-        alt="Complejo moderno Mosha Departamentos Trevelin al atardecer"
+        alt="Complejo moderno Andes Departamentos Trevelin al atardecer"
         className="absolute inset-0 w-full h-full object-cover object-[62%_center] sm:object-center z-0"
         src="./hero-mosha-banner-2x.webp?v=8"
         srcSet="./hero-mosha-banner.webp?v=8 1024w, ./hero-mosha-banner-2x.webp?v=8 2048w"
@@ -36,7 +36,7 @@ export default function HeroBanner({ tHero }) {
 
           {/* Main Title */}
           <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.12] mb-3 sm:mb-4 drop-shadow-md">
-            {tHero.title1 || 'Mosha'} <span className="text-white/95">{tHero.title2 || 'Departamentos'}</span>
+            {tHero.title1 || 'Andes'} <span className="text-white/95">{tHero.title2 || 'Departamentos'}</span>
           </h1>
 
           {/* Description */}

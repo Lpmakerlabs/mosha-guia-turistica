@@ -3,7 +3,7 @@ import { QRCodeSVG } from 'qrcode.react';
 
 export default function PracticalInfoSection({
   tServicios,
-  wifiSSID = "Mosha_Departamentos_Fibra",
+  wifiSSID = "Andes_Departamentos_Fibra",
   wifiPassword = "Trevelin2026!",
   hostPhone = "02945 64-5700",
   onShowToast,
@@ -79,7 +79,7 @@ export default function PracticalInfoSection({
   const waNumber = cleanPhone.startsWith('54') ? cleanPhone : `549${cleanPhone}`;
   const telNumber = rawDigits.startsWith('0') ? rawDigits : `0${rawDigits}`;
   const waText = encodeURIComponent(
-    tServicios.waMessage || 'Hola, me estoy hospedando en Mosha Departamentos'
+    tServicios.waMessage || 'Hola, me estoy hospedando en Andes Departamentos'
   );
   const waLink = `https://wa.me/${waNumber}?text=${waText}`;
 
@@ -436,7 +436,7 @@ export default function PracticalInfoSection({
                         {tServicios.contactoLocation || 'Trevelin, Chubut — En el centro, a pasos de la plaza'}
                       </p>
                       <a
-                        href="https://www.google.com/maps/search/?api=1&query=Mosha+Departamentos+Trevelin"
+                        href="https://www.google.com/maps/search/?api=1&query=Departamentos+Trevelin"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-700 hover:text-blue-900 mt-1 transition group"

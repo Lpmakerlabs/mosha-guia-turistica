@@ -37,7 +37,7 @@ export default function App() {
   const [lang, setLang] = useState(() => {
     if (typeof window !== 'undefined') {
       try {
-        const saved = window.localStorage.getItem('mosha_lang');
+        const saved = window.localStorage.getItem('andes_lang');
         if (saved === 'es' || saved === 'en') return saved;
         const browserLang = (window.navigator.language || '').toLowerCase();
         if (browserLang.startsWith('en')) return 'en';
@@ -56,7 +56,7 @@ export default function App() {
 
   useEffect(() => {
     try {
-      window.localStorage.setItem('mosha_lang', lang);
+      window.localStorage.setItem('andes_lang', lang);
       document.documentElement.lang = lang;
     } catch {}
   }, [lang]);
@@ -70,7 +70,7 @@ export default function App() {
   const currentT = t[lang] || t.es;
 
   // Real Complex Credentials & Contact
-  const wifiSSID = "Mosha_Departamentos_Fibra";
+  const wifiSSID = "Andes_Departamentos_Fibra";
   const wifiPassword = "Trevelin2026!";
   const hostPhone = "02945 64-5700";
 
@@ -213,8 +213,8 @@ export default function App() {
       const msg = encodeURIComponent(
         currentT.servicios?.waMessage ||
           (lang === 'en'
-            ? 'Hello! I am staying at Mosha Departamentos and have a question.'
-            : 'Hola Mosha! Estoy en el departamento y quería hacerles una consulta.')
+            ? 'Hello! I am staying at Andes Departamentos and have a question.'
+            : 'Hola Andes! Estoy en el departamento y quería hacerles una consulta.')
       );
       window.open(`https://wa.me/5492945645700?text=${msg}`, '_blank');
       return;
