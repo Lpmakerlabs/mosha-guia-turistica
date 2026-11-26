@@ -3,7 +3,7 @@ import { QRCodeSVG } from 'qrcode.react';
 
 export default function PracticalInfoSection({
   tServicios,
-  wifiSSID = "Andes_Departamentos_Fibra",
+  wifiSSID = "Andes_Deptos_WiFi",
   wifiPassword = "Trevelin2026!",
   hostPhone = "+54 9 2945 XX-XXXX",
   onShowToast,

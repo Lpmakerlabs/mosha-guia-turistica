@@ -57,7 +57,7 @@ export default function HeroBanner({ tHero }) {
                   window.scrollTo({ top: Math.max(0, elTop), behavior: 'smooth' });
                 }
               }}
-              className="inline-flex items-center justify-center space-x-2 bg-white text-[#0c1a2d] hover:bg-slate-100 font-bold px-4 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-lg transition-transform hover:scale-105 duration-200 text-xs sm:text-sm cursor-pointer"
+              className="inline-flex items-center justify-center space-x-2 bg-white border border-white text-[#0c1a2d] hover:bg-slate-100 font-bold px-4 py-2 sm:px-6 sm:py-2.5 rounded-full shadow-lg transition-transform hover:scale-105 duration-200 text-xs sm:text-sm cursor-pointer"
             >
               <span>{tHero.btnExplore || 'Explorar Guía'}</span>
               <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

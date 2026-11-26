@@ -219,11 +219,11 @@ export default function ServiciosMedicosView({ lang, setLang, onBack, onOpenPriv
               <a
                 key={qd.num}
                 href={`tel:${qd.num}`}
-                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-full bg-white hover:bg-red-600 hover:text-white border border-red-200 text-slate-800 text-xs font-bold transition shadow-xs group"
+                className="inline-flex items-center justify-center gap-1 sm:gap-2 px-2.5 sm:px-3.5 py-2 sm:py-1.5 rounded-full bg-white hover:bg-red-600 hover:text-white border border-red-200 text-slate-800 text-[11px] sm:text-xs font-bold whitespace-nowrap transition shadow-xs group"
               >
-                <span>{qd.icon}</span>
-                <span>{qd.label}</span>
-                <Phone className="w-3 h-3 text-red-500 group-hover:text-white" />
+                <span className="shrink-0">{qd.icon}</span>
+                <span className="truncate">{qd.label}</span>
+                <Phone className="w-3 h-3 text-red-500 group-hover:text-white shrink-0" />
               </a>
             ))}
           </div>

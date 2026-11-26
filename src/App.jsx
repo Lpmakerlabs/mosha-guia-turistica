@@ -70,7 +70,7 @@ export default function App() {
   const currentT = t[lang] || t.es;
 
   // Real Complex Credentials & Contact
-  const wifiSSID = "Andes_Departamentos_Fibra";
+  const wifiSSID = "Andes_Deptos_WiFi";
   const wifiPassword = "Trevelin2026!";
   const hostPhone = "+54 9 2945 XX-XXXX";
 
